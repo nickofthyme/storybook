@@ -1,18 +1,18 @@
 {
-  "name": "@storybook/api",
+  "name": "@storybook/addons",
   "version": "7.1.0-alpha.23",
-  "description": "Storybook Manager API (facade)",
+  "description": "Storybook addons store",
   "keywords": [
     "storybook"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/next/code/lib/api",
+  "homepage": "https://github.com/storybookjs/storybook/tree/next/code/deprecated/addons",
   "bugs": {
     "url": "https://github.com/storybookjs/storybook/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/storybookjs/storybook.git",
-    "directory": "code/lib/manager-api-shim"
+    "directory": "code/deprecated/addons"
   },
   "funding": {
     "type": "opencollective",
@@ -22,49 +22,43 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/entry.d.ts",
-      "require": "./dist/entry.js",
-      "import": "./dist/entry.mjs"
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.js",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
     },
     "./package.json": "./package.json"
   },
-  "main": "dist/entry.js",
-  "module": "dist/entry.mjs",
-  "types": "dist/entry.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist/**/*",
+    "template/**/*",
     "README.md",
     "*.js",
     "*.d.ts"
   ],
   "scripts": {
     "check": "../../../scripts/node_modules/.bin/tsc --noEmit",
-    "prep": "../../../scripts/prepare/facade.ts"
+    "prep": "../../../scripts/prepare/bundle.ts"
   },
   "dependencies": {
-    "@storybook/client-logger": "7.1.0-alpha.23",
-    "@storybook/manager-api": "7.1.0-alpha.23"
+    "@storybook/manager-api": "7.1.0-alpha.23",
+    "@storybook/preview-api": "7.1.0-alpha.23",
+    "@storybook/types": "7.1.0-alpha.23"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
-  },
-  "peerDependenciesMeta": {
-    "react": {
-      "optional": true
-    },
-    "react-dom": {
-      "optional": true
-    }
   },
   "publishConfig": {
     "access": "public"
   },
   "bundler": {
     "entries": [
-      "./src/entry.ts"
-    ],
-    "shim": "@storybook/manager-api"
+      "./src/index.ts"
+    ]
   },
   "gitHead": "4e6e01b944b879104250d5f4af38451724a0ed0e"
 }
