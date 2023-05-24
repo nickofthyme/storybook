@@ -31,7 +31,7 @@ export const getActualPackageJson = async (packageName: string) => {
 // Note that this probably doesn't work in PNPM mode
 export const getStorybookCoreVersion = async () => {
   const coreVersions = await Promise.all(
-    ['@storybook/core-common', '@storybook/core-server'].map(getActualPackageVersion)
+    ['@storybook/core-api/dist/common', '@storybook/core-server'].map(getActualPackageVersion)
   );
   return coreVersions.find((v) => v.version)?.version;
 };

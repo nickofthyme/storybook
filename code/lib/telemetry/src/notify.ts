@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { cache } from '@storybook/core-common';
+import { cache } from '@storybook/core-api/dist/common';
 
 const TELEMETRY_KEY_NOTIFY_DATE = 'telemetry-notification-date';
 

@@ -1,6 +1,6 @@
 import prompts from 'prompts';
 import type { CLIOptions, CoreConfig } from '@storybook/types';
-import { loadAllPresets, cache } from '@storybook/core-common';
+import { loadAllPresets, cache } from '@storybook/core-api/dist/common';
 import { telemetry, getPrecedingUpgrade, oneWayHash } from '@storybook/telemetry';
 import type { EventType } from '@storybook/telemetry';
 import { logger } from '@storybook/node-logger';

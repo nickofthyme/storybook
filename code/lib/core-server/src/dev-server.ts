@@ -3,7 +3,7 @@ import compression from 'compression';
 
 import type { CoreConfig, Options, StorybookConfig } from '@storybook/types';
 
-import { logConfig } from '@storybook/core-common';
+import { logConfig } from '@storybook/core-api/dist/common';
 
 import { getMiddleware } from './utils/middleware';
 import { getServerAddresses } from './utils/server-address';

@@ -8,7 +8,7 @@ import { globalExternals } from '@fal-works/esbuild-plugin-global-externals';
 import { pnpPlugin } from '@yarnpkg/esbuild-plugin-pnp';
 import aliasPlugin from 'esbuild-plugin-alias';
 
-import { stringifyProcessEnvs } from '@storybook/core-common';
+import { stringifyProcessEnvs } from '@storybook/core-api/dist/common';
 import { getTemplatePath, renderHTML } from './utils/template';
 import { definitions } from './utils/globals';
 import { wrapManagerEntries } from './utils/managerEntries';

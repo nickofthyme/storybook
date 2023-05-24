@@ -1,13 +1,13 @@
 /// <reference types="@types/jest" />;
 
 import prompts from 'prompts';
-import { loadAllPresets, cache } from '@storybook/core-common';
+import { loadAllPresets, cache } from '@storybook/core-api/dist/common';
 import { telemetry } from '@storybook/telemetry';
 
 import { withTelemetry } from './withTelemetry';
 
 jest.mock('prompts');
-jest.mock('@storybook/core-common');
+jest.mock('@storybook/core-api/dist/common');
 jest.mock('@storybook/telemetry');
 
 const cliOptions = {};

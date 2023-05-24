@@ -85,7 +85,7 @@
   },
   "devDependencies": {
     "@jest/globals": "^26.6.2",
-    "@storybook/core-common": "7.1.0-alpha.23",
+    "@storybook/core-api": "7.1.0-alpha.23",
     "ansi-to-html": "^0.6.11",
     "react": "^16.14.0",
     "slash": "^5.0.0"

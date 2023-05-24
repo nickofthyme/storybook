@@ -1,5 +1,5 @@
 import type { StorybookConfig } from '@storybook/types';
-import { findDistEsm } from '@storybook/core-common';
+import { findDistEsm } from '@storybook/core-api/dist/common';
 import { hasDocsOrControls } from '@storybook/docs-tools';
 
 export const previewAnnotations: StorybookConfig['previewAnnotations'] = (entry = [], options) => {

@@ -7,7 +7,7 @@
 
 import path from 'path';
 import fs from 'fs-extra';
-import { normalizeStoriesEntry } from '@storybook/core-common';
+import { normalizeStoriesEntry } from '@storybook/core-api/dist/common';
 import type { NormalizedStoriesSpecifier, StoryIndexer, StoryIndexEntry } from '@storybook/types';
 import { loadCsf, getStorySortParameter } from '@storybook/csf-tools';
 import { toId } from '@storybook/csf';

@@ -1,9 +1,9 @@
 import { nanoid } from 'nanoid';
-import { cache } from '@storybook/core-common';
+import { cache } from '@storybook/core-api/dist/common';
 import { resetSessionIdForTest, getSessionId, SESSION_TIMEOUT } from './session-id';
 
-jest.mock('@storybook/core-common', () => {
-  const actual = jest.requireActual('@storybook/core-common');
+jest.mock('@storybook/core-api/dist/common', () => {
+  const actual = jest.requireActual('@storybook/core-api/dist/common');
   return {
     ...actual,
     cache: {

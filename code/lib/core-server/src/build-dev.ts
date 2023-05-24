@@ -13,7 +13,7 @@ import {
   resolveAddonName,
   resolvePathInStorybookCache,
   validateFrameworkName,
-} from '@storybook/core-common';
+} from '@storybook/core-api/dist/common';
 import prompts from 'prompts';
 import { global } from '@storybook/global';
 import { telemetry } from '@storybook/telemetry';

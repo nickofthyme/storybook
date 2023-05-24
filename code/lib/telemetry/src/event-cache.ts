@@ -1,4 +1,4 @@
-import { cache } from '@storybook/core-common';
+import { cache } from '@storybook/core-api/dist/common';
 import type { EventType } from './types';
 
 interface UpgradeSummary {

@@ -21,7 +21,7 @@ import {
   logConfig,
   normalizeStories,
   resolveAddonName,
-} from '@storybook/core-common';
+} from '@storybook/core-api/dist/common';
 
 import isEqual from 'lodash/isEqual.js';
 import { outputStats } from './utils/output-stats';

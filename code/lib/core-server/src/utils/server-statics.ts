@@ -1,6 +1,6 @@
 import { logger } from '@storybook/node-logger';
 import type { Options, StorybookConfig } from '@storybook/types';
-import { getDirectoryFromWorkingDir } from '@storybook/core-common';
+import { getDirectoryFromWorkingDir } from '@storybook/core-api/dist/common';
 import chalk from 'chalk';
 import express from 'express';
 import { pathExists } from 'fs-extra';

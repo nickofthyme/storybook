@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@storybook/client-logger": "7.1.0-alpha.23",
-    "@storybook/core-common": "7.1.0-alpha.23",
+    "@storybook/core-api": "7.1.0-alpha.23",
     "chalk": "^4.1.0",
     "detect-package-manager": "^2.0.1",
     "fetch-retry": "^5.0.2",

@@ -8,7 +8,7 @@ import debounce from 'lodash/debounce.js';
 import { STORY_INDEX_INVALIDATED } from '@storybook/core-events';
 import type { StoryIndex, StoryIndexer } from '@storybook/types';
 import { loadCsf } from '@storybook/csf-tools';
-import { normalizeStoriesEntry } from '@storybook/core-common';
+import { normalizeStoriesEntry } from '@storybook/core-api/dist/common';
 
 import { useStoriesJson, DEBOUNCE, convertToIndexV3 } from './stories-json';
 import type { ServerChannel } from './get-server-channel';

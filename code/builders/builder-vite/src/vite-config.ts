@@ -7,7 +7,11 @@ import type {
   UserConfig as ViteConfig,
   InlineConfig,
 } from 'vite';
-import { isPreservingSymlinks, getFrameworkName, getBuilderOptions } from '@storybook/core-common';
+import {
+  isPreservingSymlinks,
+  getFrameworkName,
+  getBuilderOptions,
+} from '@storybook/core-api/dist/common';
 import { globals } from '@storybook/preview/globals';
 import type { Options } from '@storybook/types';
 import {

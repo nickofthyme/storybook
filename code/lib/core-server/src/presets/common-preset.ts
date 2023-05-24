@@ -5,7 +5,7 @@ import {
   getPreviewBodyTemplate,
   getPreviewHeadTemplate,
   loadEnvs,
-} from '@storybook/core-common';
+} from '@storybook/core-api/dist/common';
 import type {
   CLIOptions,
   IndexerOptions,

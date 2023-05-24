@@ -4923,7 +4923,7 @@ __metadata:
     "@storybook/blocks": 7.1.0-alpha.23
     "@storybook/client-logger": 7.1.0-alpha.23
     "@storybook/components": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/manager-api": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
     "@storybook/preview-api": 7.1.0-alpha.23
@@ -4987,13 +4987,14 @@ __metadata:
     "@storybook/addon-outline": 7.1.0-alpha.23
     "@storybook/addon-toolbars": 7.1.0-alpha.23
     "@storybook/addon-viewport": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/manager-api": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
     "@storybook/preview-api": 7.1.0-alpha.23
     "@storybook/vue": 7.1.0-alpha.23
     ts-dedent: ^2.0.0
     typescript: ^4.9.3
+    util: ^0.12.4
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -5019,7 +5020,7 @@ __metadata:
     "@devtools-ds/object-inspector": ^1.1.2
     "@storybook/client-logger": 7.1.0-alpha.23
     "@storybook/components": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/core-events": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
     "@storybook/instrumenter": 7.1.0-alpha.23
@@ -5035,6 +5036,7 @@ __metadata:
     polished: ^4.2.2
     ts-dedent: ^2.2.0
     typescript: ~4.9.3
+    util: ^0.12.4
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -5192,7 +5194,7 @@ __metadata:
     "@storybook/angular": 7.1.0-alpha.23
     "@storybook/babel-plugin-require-context-hook": 1.0.1
     "@storybook/client-api": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/core-webpack": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
     "@storybook/preview-api": 7.1.0-alpha.23
@@ -5375,7 +5377,7 @@ __metadata:
     "@storybook/builder-webpack5": 7.1.0-alpha.23
     "@storybook/cli": 7.1.0-alpha.23
     "@storybook/client-logger": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/core-events": 7.1.0-alpha.23
     "@storybook/core-server": 7.1.0-alpha.23
     "@storybook/core-webpack": 7.1.0-alpha.23
@@ -5521,7 +5523,7 @@ __metadata:
   resolution: "@storybook/builder-manager@workspace:builders/builder-manager"
   dependencies:
     "@fal-works/esbuild-plugin-global-externals": ^2.1.2
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/manager": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
     "@types/ejs": ^3.1.1
@@ -5548,7 +5550,7 @@ __metadata:
     "@storybook/channel-postmessage": 7.1.0-alpha.23
     "@storybook/channel-websocket": 7.1.0-alpha.23
     "@storybook/client-logger": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/csf-plugin": 7.1.0-alpha.23
     "@storybook/mdx2-csf": ^1.0.0
     "@storybook/node-logger": 7.1.0-alpha.23
@@ -5568,6 +5570,7 @@ __metadata:
     rollup: ^3.20.1
     slash: ^5.0.0
     typescript: ~4.9.3
+    util: ^0.12.4
     vite: ^4.0.4
   peerDependencies:
     "@preact/preset-vite": "*"
@@ -5597,7 +5600,7 @@ __metadata:
     "@storybook/client-api": 7.1.0-alpha.23
     "@storybook/client-logger": 7.1.0-alpha.23
     "@storybook/components": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/core-events": 7.1.0-alpha.23
     "@storybook/core-webpack": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
@@ -5716,7 +5719,7 @@ __metadata:
     "@ndelangen/get-tarball": ^3.0.7
     "@storybook/client-api": 7.1.0-alpha.23
     "@storybook/codemod": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/core-server": 7.1.0-alpha.23
     "@storybook/csf-tools": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
@@ -5857,7 +5860,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook/core-api@7.1.0-alpha.23, @storybook/core-api@workspace:lib/core-api":
+"@storybook/core-api@7.1.0-alpha.23, @storybook/core-api@workspace:*, @storybook/core-api@workspace:lib/core-api":
   version: 0.0.0-use.local
   resolution: "@storybook/core-api@workspace:lib/core-api"
   dependencies:
@@ -5897,7 +5900,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook/core-common@7.1.0-alpha.23, @storybook/core-common@workspace:*, @storybook/core-common@workspace:lib/core-common":
+"@storybook/core-common@workspace:lib/core-common":
   version: 0.0.0-use.local
   resolution: "@storybook/core-common@workspace:lib/core-common"
   dependencies:
@@ -5929,7 +5932,7 @@ __metadata:
     "@aw-web-design/x-default-browser": 1.4.88
     "@discoveryjs/json-ext": ^0.5.3
     "@storybook/builder-manager": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/core-events": 7.1.0-alpha.23
     "@storybook/csf": ^0.1.0
     "@storybook/csf-tools": 7.1.0-alpha.23
@@ -5984,7 +5987,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/core-webpack@workspace:lib/core-webpack"
   dependencies:
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
     "@storybook/types": 7.1.0-alpha.23
     "@types/node": ^16.0.0
@@ -6054,7 +6057,7 @@ __metadata:
   resolution: "@storybook/docs-tools@workspace:lib/docs-tools"
   dependencies:
     "@babel/core": ^7.12.10
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/preview-api": 7.1.0-alpha.23
     "@storybook/types": 7.1.0-alpha.23
     "@types/doctrine": ^0.0.3
@@ -6071,7 +6074,7 @@ __metadata:
   resolution: "@storybook/ember@workspace:frameworks/ember"
   dependencies:
     "@storybook/builder-webpack5": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/docs-tools": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
     "@storybook/preview-api": 7.1.0-alpha.23
@@ -6139,7 +6142,7 @@ __metadata:
   resolution: "@storybook/html-webpack5@workspace:frameworks/html-webpack5"
   dependencies:
     "@storybook/builder-webpack5": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
     "@storybook/html": 7.1.0-alpha.23
     "@storybook/preset-html-webpack": 7.1.0-alpha.23
@@ -6156,7 +6159,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/html@workspace:renderers/html"
   dependencies:
-    "@storybook/core-client": 7.1.0-alpha.23
     "@storybook/docs-tools": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
     "@storybook/preview-api": 7.1.0-alpha.23
@@ -6333,7 +6335,7 @@ __metadata:
     "@babel/types": ^7.20.5
     "@storybook/addon-actions": 7.1.0-alpha.23
     "@storybook/builder-webpack5": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
     "@storybook/preset-react-webpack": 7.1.0-alpha.23
     "@storybook/preview-api": 7.1.0-alpha.23
@@ -6428,7 +6430,7 @@ __metadata:
   resolution: "@storybook/preact-webpack5@workspace:frameworks/preact-webpack5"
   dependencies:
     "@storybook/builder-webpack5": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/preact": 7.1.0-alpha.23
     "@storybook/preset-preact-webpack": 7.1.0-alpha.23
     "@types/node": ^16.0.0
@@ -6446,7 +6448,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/preact@workspace:renderers/preact"
   dependencies:
-    "@storybook/core-client": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
     "@storybook/preview-api": 7.1.0-alpha.23
     "@storybook/types": 7.1.0-alpha.23
@@ -6652,7 +6653,7 @@ __metadata:
     "@storybook/channel-postmessage": 7.1.0-alpha.23
     "@storybook/channels": 7.1.0-alpha.23
     "@storybook/client-logger": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/core-events": 7.1.0-alpha.23
     "@storybook/csf": ^0.1.0
     "@storybook/global": ^5.0.0
@@ -6797,7 +6798,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.20.2
     "@storybook/client-logger": 7.1.0-alpha.23
-    "@storybook/core-client": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/docs-tools": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
     "@storybook/preview-api": 7.1.0-alpha.23
@@ -6882,8 +6883,8 @@ __metadata:
     "@storybook/client-logger": "workspace:*"
     "@storybook/codemod": "workspace:*"
     "@storybook/components": "workspace:*"
+    "@storybook/core-api": "workspace:*"
     "@storybook/core-client": "workspace:*"
-    "@storybook/core-common": "workspace:*"
     "@storybook/core-events": "workspace:*"
     "@storybook/core-server": "workspace:*"
     "@storybook/core-webpack": "workspace:*"
@@ -7050,7 +7051,7 @@ __metadata:
   resolution: "@storybook/server-webpack5@workspace:frameworks/server-webpack5"
   dependencies:
     "@storybook/builder-webpack5": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/preset-server-webpack": 7.1.0-alpha.23
     "@storybook/server": 7.1.0-alpha.23
     "@types/node": ^16.0.0
@@ -7065,7 +7066,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@storybook/server@workspace:renderers/server"
   dependencies:
-    "@storybook/core-client": 7.1.0-alpha.23
     "@storybook/csf": ^0.1.0
     "@storybook/global": ^5.0.0
     "@storybook/preview-api": 7.1.0-alpha.23
@@ -7130,7 +7130,7 @@ __metadata:
   resolution: "@storybook/svelte-webpack5@workspace:frameworks/svelte-webpack5"
   dependencies:
     "@storybook/builder-webpack5": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/preset-svelte-webpack": 7.1.0-alpha.23
     "@storybook/svelte": 7.1.0-alpha.23
     svelte: ^3.48.0
@@ -7150,7 +7150,6 @@ __metadata:
   resolution: "@storybook/svelte@workspace:renderers/svelte"
   dependencies:
     "@storybook/client-logger": 7.1.0-alpha.23
-    "@storybook/core-client": 7.1.0-alpha.23
     "@storybook/core-events": 7.1.0-alpha.23
     "@storybook/docs-tools": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
@@ -7187,7 +7186,7 @@ __metadata:
   resolution: "@storybook/telemetry@workspace:lib/telemetry"
   dependencies:
     "@storybook/client-logger": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     chalk: ^4.1.0
     detect-package-manager: ^2.0.1
     fetch-retry: ^5.0.2
@@ -7268,7 +7267,7 @@ __metadata:
   resolution: "@storybook/vue-vite@workspace:frameworks/vue-vite"
   dependencies:
     "@storybook/builder-vite": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/core-server": 7.1.0-alpha.23
     "@storybook/vue": 7.1.0-alpha.23
     magic-string: ^0.27.0
@@ -7289,7 +7288,7 @@ __metadata:
   resolution: "@storybook/vue-webpack5@workspace:frameworks/vue-webpack5"
   dependencies:
     "@storybook/builder-webpack5": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/preset-vue-webpack": 7.1.0-alpha.23
     "@storybook/vue": 7.1.0-alpha.23
     "@types/node": ^16.0.0
@@ -7334,7 +7333,7 @@ __metadata:
   resolution: "@storybook/vue3-webpack5@workspace:frameworks/vue3-webpack5"
   dependencies:
     "@storybook/builder-webpack5": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/preset-vue3-webpack": 7.1.0-alpha.23
     "@storybook/vue3": 7.1.0-alpha.23
     "@types/node": ^16.0.0
@@ -7356,7 +7355,6 @@ __metadata:
   resolution: "@storybook/vue3@workspace:renderers/vue3"
   dependencies:
     "@digitak/esrun": ^3.2.2
-    "@storybook/core-client": 7.1.0-alpha.23
     "@storybook/docs-tools": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
     "@storybook/preview-api": 7.1.0-alpha.23
@@ -7422,7 +7420,7 @@ __metadata:
   dependencies:
     "@babel/preset-env": ^7.20.2
     "@storybook/builder-webpack5": 7.1.0-alpha.23
-    "@storybook/core-common": 7.1.0-alpha.23
+    "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/preset-web-components-webpack": 7.1.0-alpha.23
     "@storybook/web-components": 7.1.0-alpha.23
     "@types/node": ^16.0.0
@@ -7440,7 +7438,6 @@ __metadata:
   resolution: "@storybook/web-components@workspace:renderers/web-components"
   dependencies:
     "@storybook/client-logger": 7.1.0-alpha.23
-    "@storybook/core-client": 7.1.0-alpha.23
     "@storybook/docs-tools": 7.1.0-alpha.23
     "@storybook/global": ^5.0.0
     "@storybook/manager-api": 7.1.0-alpha.23

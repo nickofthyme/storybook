@@ -7,8 +7,8 @@ jest.mock('./mainConfigFile', () => ({
   getStorybookData: jest.fn(),
 }));
 
-jest.mock('@storybook/core-common', () => ({
-  ...jest.requireActual('@storybook/core-common'),
+jest.mock('@storybook/core-api/dist/common', () => ({
+  ...jest.requireActual('@storybook/core-api/dist/common'),
   loadMainConfig: jest.fn(),
 }));
 

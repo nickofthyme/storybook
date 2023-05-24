@@ -1,4 +1,4 @@
-import { getStorybookInfo, loadMainConfig } from '@storybook/core-common';
+import { getStorybookInfo, loadMainConfig } from '@storybook/core-api/dist/common';
 import type { StorybookConfig } from '@storybook/types';
 import type { ConfigFile } from '@storybook/csf-tools';
 import { readConfig, writeConfig as writeConfigFile } from '@storybook/csf-tools';

@@ -72,7 +72,7 @@
     "@babel/runtime": "^7.21.0",
     "@storybook/addon-actions": "7.1.0-alpha.23",
     "@storybook/builder-webpack5": "7.1.0-alpha.23",
-    "@storybook/core-common": "7.1.0-alpha.23",
+    "@storybook/core-api": "7.1.0-alpha.23",
     "@storybook/node-logger": "7.1.0-alpha.23",
     "@storybook/preset-react-webpack": "7.1.0-alpha.23",
     "@storybook/preview-api": "7.1.0-alpha.23",

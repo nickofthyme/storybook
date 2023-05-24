@@ -39,7 +39,7 @@
     "@storybook/builder-webpack5": "7.1.0-alpha.23",
     "@storybook/cli": "7.1.0-alpha.23",
     "@storybook/client-logger": "7.1.0-alpha.23",
-    "@storybook/core-common": "7.1.0-alpha.23",
+    "@storybook/core-api": "7.1.0-alpha.23",
     "@storybook/core-events": "7.1.0-alpha.23",
     "@storybook/core-server": "7.1.0-alpha.23",
     "@storybook/core-webpack": "7.1.0-alpha.23",

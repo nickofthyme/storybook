@@ -53,7 +53,6 @@
     "prep": "../../../scripts/prepare/bundle.ts"
   },
   "dependencies": {
-    "@storybook/core-client": "7.1.0-alpha.23",
     "@storybook/csf": "^0.1.0",
     "@storybook/global": "^5.0.0",
     "@storybook/preview-api": "7.1.0-alpha.23",
