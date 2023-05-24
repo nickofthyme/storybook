@@ -17,9 +17,9 @@ import {
   getPreviewBodyTemplate,
   getPreviewHeadTemplate,
   loadEnvs,
-} from '../../common';
-import { parseStaticDir } from '../server/utils/server-statics';
-import { defaultStaticDirs } from '../server/utils/constants';
+} from '../common';
+import { parseStaticDir } from '../modules/server/utils/server-statics';
+import { defaultStaticDirs } from '../modules/server/utils/constants';
 
 const interpolate = (string: string, data: Record<string, string> = {}) =>
   Object.entries(data).reduce((acc, [k, v]) => acc.replace(new RegExp(`%${k}%`, 'g'), v), string);

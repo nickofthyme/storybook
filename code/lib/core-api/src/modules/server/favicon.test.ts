@@ -3,7 +3,7 @@
 import { join } from 'path';
 import * as fs from 'fs-extra';
 import { logger } from '@storybook/node-logger';
-import * as m from '../presets/common-preset';
+import * as m from '../../presets/common-preset';
 
 const defaultFavicon = require.resolve('@storybook/core-api/public/favicon.svg');
 
