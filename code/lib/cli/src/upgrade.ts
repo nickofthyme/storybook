@@ -2,7 +2,7 @@ import { sync as spawnSync } from 'cross-spawn';
 import { telemetry, getStorybookCoreVersion } from '@storybook/telemetry';
 import semver from 'semver';
 import { logger } from '@storybook/node-logger';
-import { withTelemetry } from '@storybook/core-server';
+import { withTelemetry } from '@storybook/core-api/dist/server';
 
 import type { PackageJsonWithMaybeDeps, PackageManagerName } from './js-package-manager';
 import { getPackageDetails, JsPackageManagerFactory, useNpmWarning } from './js-package-manager';

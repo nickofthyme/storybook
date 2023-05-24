@@ -33,7 +33,6 @@
   "types": "dist/entry.d.ts",
   "files": [
     "dist/**/*",
-    "templates/**/*",
     "README.md",
     "*.js",
     "*.d.ts"

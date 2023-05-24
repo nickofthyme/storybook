@@ -22,16 +22,16 @@
   "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "node": "./dist/index.js",
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "types": "./dist/entry.d.ts",
+      "node": "./dist/entry.js",
+      "require": "./dist/entry.js",
+      "import": "./dist/entry.mjs"
     },
     "./package.json": "./package.json"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/entry.js",
+  "module": "dist/entry.mjs",
+  "types": "dist/entry.d.ts",
   "files": [
     "dist/**/*",
     "README.md",
@@ -40,18 +40,11 @@
   ],
   "scripts": {
     "check": "../../../scripts/node_modules/.bin/tsc --noEmit",
-    "prep": "../../../scripts/prepare/bundle.ts"
+    "prep": "../../../scripts/prepare/facade.ts"
   },
   "dependencies": {
-    "@storybook/client-logger": "7.1.0-alpha.23",
     "@storybook/core-api": "7.1.0-alpha.23",
-    "chalk": "^4.1.0",
-    "detect-package-manager": "^2.0.1",
-    "fetch-retry": "^5.0.2",
-    "fs-extra": "^11.1.0",
-    "isomorphic-unfetch": "^3.1.0",
-    "nanoid": "^3.3.1",
-    "read-pkg-up": "^7.0.1"
+    "@storybook/node-logger": "7.1.0-alpha.23"
   },
   "devDependencies": {
     "typescript": "~4.9.3"
@@ -61,9 +54,9 @@
   },
   "bundler": {
     "entries": [
-      "./src/index.ts"
+      "./src/entry.ts"
     ],
-    "platform": "node"
+    "shim": "@storybook/core-api/dist/telemetry"
   },
   "gitHead": "4e6e01b944b879104250d5f4af38451724a0ed0e"
 }

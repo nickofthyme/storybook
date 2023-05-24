@@ -2,7 +2,7 @@ import type { PackageJson } from 'read-pkg-up';
 import chalk from 'chalk';
 import prompts from 'prompts';
 import { telemetry } from '@storybook/telemetry';
-import { withTelemetry } from '@storybook/core-server';
+import { withTelemetry } from '@storybook/core-api/dist/server';
 
 import dedent from 'ts-dedent';
 import { installableProjectTypes, ProjectType } from './project_types';

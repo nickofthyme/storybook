@@ -59,7 +59,6 @@
     "@ndelangen/get-tarball": "^3.0.7",
     "@storybook/codemod": "7.1.0-alpha.23",
     "@storybook/core-api": "7.1.0-alpha.23",
-    "@storybook/core-server": "7.1.0-alpha.23",
     "@storybook/csf-tools": "7.1.0-alpha.23",
     "@storybook/node-logger": "7.1.0-alpha.23",
     "@storybook/telemetry": "7.1.0-alpha.23",

@@ -1,7 +1,7 @@
 import { dedent } from 'ts-dedent';
 import { sync as readUpSync } from 'read-pkg-up';
 import { logger, instance as npmLog } from '@storybook/node-logger';
-import { buildDevStandalone, withTelemetry } from '@storybook/core-server';
+import { buildDevStandalone, withTelemetry } from '@storybook/core-api/dist/server';
 import { cache } from '@storybook/core-api/dist/common';
 
 function printError(error: any) {

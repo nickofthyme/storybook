@@ -1,5 +1,5 @@
 import { sync as readUpSync } from 'read-pkg-up';
-import { buildStaticStandalone, withTelemetry } from '@storybook/core-server';
+import { buildStaticStandalone, withTelemetry } from '@storybook/core-api/dist/server';
 import { cache } from '@storybook/core-api/dist/common';
 
 export const build = async (cliOptions: any) => {

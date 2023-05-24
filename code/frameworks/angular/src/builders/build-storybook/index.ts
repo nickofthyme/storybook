@@ -18,7 +18,7 @@ import { CLIOptions } from '@storybook/types';
 import { getEnvConfig, versions } from '@storybook/cli';
 import { addToGlobalContext } from '@storybook/telemetry';
 
-import { buildStaticStandalone, withTelemetry } from '@storybook/core-server';
+import { buildStaticStandalone, withTelemetry } from '@storybook/core-api/dist/server';
 import {
   AssetPattern,
   StyleElement,

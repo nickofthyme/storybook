@@ -56,12 +56,10 @@
   },
   "dependencies": {
     "@babel/core": "^7.12.10",
-    "@storybook/addons": "7.1.0-alpha.23",
     "@storybook/api": "7.1.0-alpha.23",
     "@storybook/channel-postmessage": "7.1.0-alpha.23",
     "@storybook/channel-websocket": "7.1.0-alpha.23",
     "@storybook/channels": "7.1.0-alpha.23",
-    "@storybook/client-api": "7.1.0-alpha.23",
     "@storybook/client-logger": "7.1.0-alpha.23",
     "@storybook/components": "7.1.0-alpha.23",
     "@storybook/core-api": "7.1.0-alpha.23",

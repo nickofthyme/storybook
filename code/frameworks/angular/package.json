@@ -41,7 +41,6 @@
     "@storybook/client-logger": "7.1.0-alpha.23",
     "@storybook/core-api": "7.1.0-alpha.23",
     "@storybook/core-events": "7.1.0-alpha.23",
-    "@storybook/core-server": "7.1.0-alpha.23",
     "@storybook/core-webpack": "7.1.0-alpha.23",
     "@storybook/docs-tools": "7.1.0-alpha.23",
     "@storybook/global": "^5.0.0",
