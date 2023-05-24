@@ -38,9 +38,12 @@ async function getErrorLevel({ cliOptions, presetOptions }: TelemetryOptions): P
 
   // should we load the preset?
   const presets = await loadAllPresets({
-    corePresets: [require.resolve('@storybook/core-api/dist/presets/common-preset')],
-    overridePresets: [],
     ...presetOptions,
+    corePresets: [
+      ...presetOptions.corePresets,
+      require.resolve('@storybook/core-api/dist/presets/common-preset'),
+    ],
+    overridePresets: [],
   });
 
   // If the user has chosen to enable/disable crash reports in main.js
@@ -116,9 +119,9 @@ export async function withTelemetry<T>(
 
   try {
     return await run();
-  } catch (error) {
+  } catch (error: any) {
     if (error?.message === 'Canceled by the user') {
-      return undefined;
+      return undefined as T;
     }
 
     const { printError = logger.error } = options;

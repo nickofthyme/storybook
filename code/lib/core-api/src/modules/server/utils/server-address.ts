@@ -10,8 +10,8 @@ export function getServerAddresses(port: number, host: string, proto: string) {
   };
 }
 
-export const getServerPort = (port: number) =>
-  detectFreePort(port).catch((error) => {
+export const getServerPort = (port: number | undefined) =>
+  detectFreePort(port || 6006).catch((error) => {
     logger.error(error);
     process.exit(-1);
   });

@@ -25,14 +25,14 @@ import { outputStats } from './utils/output-stats';
 import { outputStartupInformation } from './utils/output-startup-information';
 import { updateCheck } from './utils/update-check';
 import { getServerPort, getServerChannelUrl } from './utils/server-address';
-import { getManagerBuilder, getPreviewBuilder } from './utils/get-builders';
+import { getPreviewBuilder } from './utils/get-builders';
 import { warnOnIncompatibleAddons } from './utils/warnOnIncompatibleAddons';
 
 export async function buildDevStandalone(
   options: CLIOptions & LoadOptions & BuilderOptions
 ): Promise<{ port: number; address: string; networkAddress: string }> {
   const { packageJson, versionUpdates, releaseNotes } = options;
-  const { version } = packageJson;
+  const { version = '' } = packageJson;
 
   // updateInfo and releaseNotesData are cached, so this is typically pretty fast
   const [port, versionCheck, releaseNotesData] = await Promise.all([
@@ -71,7 +71,7 @@ export async function buildDevStandalone(
   const { framework } = config;
   const corePresets = [];
 
-  const frameworkName = typeof framework === 'string' ? framework : framework?.name;
+  const frameworkName = (typeof framework === 'string' ? framework : framework?.name) as string;
   validateFrameworkName(frameworkName);
 
   corePresets.push(join(frameworkName, 'preset'));
@@ -95,23 +95,23 @@ export async function buildDevStandalone(
     }
   }
 
-  const builderName = typeof builder === 'string' ? builder : builder?.name;
-  const [previewBuilder, managerBuilder] = await Promise.all([
-    getPreviewBuilder(builderName, options.configDir),
-    getManagerBuilder(),
-  ]);
+  const builderName = (typeof builder === 'string' ? builder : builder?.name) as string;
+  const [previewBuilder] = await Promise.all([getPreviewBuilder(builderName, options.configDir)]);
+
+  const resolvedRenderer = renderer
+    ? resolveAddonName(options.configDir, renderer, options)
+    : undefined;
 
   // Load second pass: all presets are applied in order
   presets = await loadAllPresets({
     corePresets: [
       require.resolve('@storybook/core-api/dist/presets/common-preset'),
-      ...(managerBuilder.corePresets || []),
       ...(previewBuilder.corePresets || []),
-      ...(renderer ? [resolveAddonName(options.configDir, renderer, options)] : []),
+      ...(renderer && resolvedRenderer ? [resolvedRenderer] : []),
       ...corePresets,
       require.resolve('@storybook/core-api/dist/presets/babel-cache-preset'),
     ],
-    overridePresets: previewBuilder.overridePresets,
+    overridePresets: previewBuilder.overridePresets || [],
     ...options,
   });
 
@@ -128,8 +128,8 @@ export async function buildDevStandalone(
     fullOptions
   );
 
-  const previewTotalTime = previewResult && previewResult.totalTime;
-  const managerTotalTime = managerResult && managerResult.totalTime;
+  const previewTotalTime = (previewResult && previewResult.totalTime) || undefined;
+  const managerTotalTime = (managerResult && managerResult.totalTime) || undefined;
 
   const previewStats = previewResult && previewResult.stats;
   const managerStats = managerResult && managerResult.stats;
@@ -156,7 +156,7 @@ export async function buildDevStandalone(
     process.exit(problems.length > 0 ? 1 : 0);
   } else {
     const name =
-      frameworkName.split('@storybook/').length > 1
+      frameworkName && frameworkName.split('@storybook/').length > 1
         ? frameworkName.split('@storybook/')[1]
         : frameworkName;
 

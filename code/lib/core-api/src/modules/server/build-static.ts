@@ -92,12 +92,14 @@ export async function buildStaticStandalone(options: BuildStaticStandaloneOption
   const [previewBuilder, managerBuilder] = await getBuilders({ ...options, presets });
   const { renderer } = await presets.apply<CoreConfig>('core', {});
 
+  const resolvedRenderer = renderer
+    ? resolveAddonName(options.configDir, renderer, options)
+    : undefined;
   presets = await loadAllPresets({
     corePresets: [
       require.resolve('@storybook/core-api/dist/presets/common-preset'),
-      ...(managerBuilder.corePresets || []),
       ...(previewBuilder.corePresets || []),
-      ...(renderer ? [resolveAddonName(options.configDir, renderer, options)] : []),
+      ...(resolvedRenderer ? [resolvedRenderer] : []),
       ...corePresets,
       require.resolve('@storybook/core-api/dist/presets/babel-cache-preset'),
     ],
@@ -151,7 +153,9 @@ export async function buildStaticStandalone(options: BuildStaticStandaloneOption
   );
   effects.push(copy(coreServerPublicDir, options.outputDir));
 
-  let initializedStoryIndexGenerator: Promise<StoryIndexGenerator> = Promise.resolve(undefined);
+  let initializedStoryIndexGenerator: Promise<StoryIndexGenerator> = Promise.resolve(
+    undefined
+  ) as any as Promise<StoryIndexGenerator>;
   if ((features?.buildStoriesJson || features?.storyStoreV7) && !options.ignorePreview) {
     const workingDir = process.cwd();
     const directories = {
