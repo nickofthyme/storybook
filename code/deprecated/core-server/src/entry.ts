@@ -4,4 +4,5 @@ deprecate(
   'importing from @storybook/core-server is deprecated and will be removed in 8.0, please import core related modules from @storybook/core-api'
 );
 
+// eslint-disable-next-line import/export
 export * from '@storybook/core-api/dist/server';

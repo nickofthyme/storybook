@@ -5932,9 +5932,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook/core-common@workspace:lib/core-common":
+"@storybook/core-common@workspace:deprecated/core-common":
   version: 0.0.0-use.local
-  resolution: "@storybook/core-common@workspace:lib/core-common"
+  resolution: "@storybook/core-common@workspace:deprecated/core-common"
   dependencies:
     "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
@@ -5957,9 +5957,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-server@workspace:lib/core-server":
+"@storybook/core-server@workspace:deprecated/core-server":
   version: 0.0.0-use.local
-  resolution: "@storybook/core-server@workspace:lib/core-server"
+  resolution: "@storybook/core-server@workspace:deprecated/core-server"
   dependencies:
     "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
@@ -7162,9 +7162,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook/telemetry@workspace:*, @storybook/telemetry@workspace:lib/telemetry":
+"@storybook/telemetry@workspace:*, @storybook/telemetry@workspace:deprecated/telemetry":
   version: 0.0.0-use.local
-  resolution: "@storybook/telemetry@workspace:lib/telemetry"
+  resolution: "@storybook/telemetry@workspace:deprecated/telemetry"
   dependencies:
     "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
