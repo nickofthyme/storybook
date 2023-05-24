@@ -5857,6 +5857,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@storybook/core-api@workspace:lib/core-api":
+  version: 0.0.0-use.local
+  resolution: "@storybook/core-api@workspace:lib/core-api"
+  languageName: unknown
+  linkType: soft
+
 "@storybook/core-client@7.1.0-alpha.23, @storybook/core-client@workspace:*, @storybook/core-client@workspace:deprecated/core-client":
   version: 0.0.0-use.local
   resolution: "@storybook/core-client@workspace:deprecated/core-client"
