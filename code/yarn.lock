@@ -5857,27 +5857,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook/core-api@workspace:lib/core-api":
+"@storybook/core-api@7.1.0-alpha.23, @storybook/core-api@workspace:lib/core-api":
   version: 0.0.0-use.local
   resolution: "@storybook/core-api@workspace:lib/core-api"
-  languageName: unknown
-  linkType: soft
-
-"@storybook/core-client@7.1.0-alpha.23, @storybook/core-client@workspace:*, @storybook/core-client@workspace:deprecated/core-client":
-  version: 0.0.0-use.local
-  resolution: "@storybook/core-client@workspace:deprecated/core-client"
-  dependencies:
-    "@storybook/client-logger": 7.1.0-alpha.23
-    "@storybook/preview-api": 7.1.0-alpha.23
-  languageName: unknown
-  linkType: soft
-
-"@storybook/core-common@7.1.0-alpha.23, @storybook/core-common@workspace:*, @storybook/core-common@workspace:lib/core-common":
-  version: 0.0.0-use.local
-  resolution: "@storybook/core-common@workspace:lib/core-common"
   dependencies:
     "@storybook/node-logger": 7.1.0-alpha.23
-    "@storybook/types": 7.1.0-alpha.23
     "@types/mock-fs": ^4.13.1
     "@types/node": ^16.0.0
     "@types/picomatch": ^2.3.0
@@ -5899,6 +5883,26 @@ __metadata:
     slash: ^5.0.0
     ts-dedent: ^2.0.0
     type-fest: ^2.19.0
+    typescript: ~4.9.3
+    util: ^0.12.4
+  languageName: unknown
+  linkType: soft
+
+"@storybook/core-client@7.1.0-alpha.23, @storybook/core-client@workspace:*, @storybook/core-client@workspace:deprecated/core-client":
+  version: 0.0.0-use.local
+  resolution: "@storybook/core-client@workspace:deprecated/core-client"
+  dependencies:
+    "@storybook/client-logger": 7.1.0-alpha.23
+    "@storybook/preview-api": 7.1.0-alpha.23
+  languageName: unknown
+  linkType: soft
+
+"@storybook/core-common@7.1.0-alpha.23, @storybook/core-common@workspace:*, @storybook/core-common@workspace:lib/core-common":
+  version: 0.0.0-use.local
+  resolution: "@storybook/core-common@workspace:lib/core-common"
+  dependencies:
+    "@storybook/core-api": 7.1.0-alpha.23
+    "@storybook/node-logger": 7.1.0-alpha.23
     typescript: ~4.9.3
   languageName: unknown
   linkType: soft
