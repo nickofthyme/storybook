@@ -1,5 +1,5 @@
 import { sync as spawnSync } from 'cross-spawn';
-import { telemetry, getStorybookCoreVersion } from '@storybook/telemetry';
+import { telemetry, getStorybookCoreVersion } from '@storybook/core-api/dist/telemetry';
 import semver from 'semver';
 import { logger } from '@storybook/node-logger';
 import { withTelemetry } from '@storybook/core-api/dist/server';

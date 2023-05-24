@@ -61,7 +61,6 @@
     "@storybook/core-api": "7.1.0-alpha.23",
     "@storybook/csf-tools": "7.1.0-alpha.23",
     "@storybook/node-logger": "7.1.0-alpha.23",
-    "@storybook/telemetry": "7.1.0-alpha.23",
     "@storybook/types": "7.1.0-alpha.23",
     "@types/semver": "^7.3.4",
     "boxen": "^5.1.2",
@@ -91,6 +90,7 @@
     "strip-json-comments": "^3.0.1",
     "tempy": "^1.0.1",
     "ts-dedent": "^2.0.0",
+    "util": "^0.12.4",
     "util-deprecate": "^1.0.2"
   },
   "devDependencies": {

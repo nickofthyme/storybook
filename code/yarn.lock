@@ -5385,7 +5385,6 @@ __metadata:
     "@storybook/manager-api": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
     "@storybook/preview-api": 7.1.0-alpha.23
-    "@storybook/telemetry": 7.1.0-alpha.23
     "@storybook/types": 7.1.0-alpha.23
     "@types/node": ^16.0.0
     "@types/react": ^16.14.34
@@ -5704,7 +5703,6 @@ __metadata:
     "@storybook/core-api": 7.1.0-alpha.23
     "@storybook/csf-tools": 7.1.0-alpha.23
     "@storybook/node-logger": 7.1.0-alpha.23
-    "@storybook/telemetry": 7.1.0-alpha.23
     "@storybook/types": 7.1.0-alpha.23
     "@types/cross-spawn": ^6.0.2
     "@types/prompts": ^2.0.9
@@ -5741,6 +5739,7 @@ __metadata:
     tempy: ^1.0.1
     ts-dedent: ^2.0.0
     typescript: ~4.9.3
+    util: ^0.12.4
     util-deprecate: ^1.0.2
   bin:
     getstorybook: ./bin/index.js
@@ -7163,7 +7162,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@storybook/telemetry@7.1.0-alpha.23, @storybook/telemetry@workspace:*, @storybook/telemetry@workspace:lib/telemetry":
+"@storybook/telemetry@workspace:*, @storybook/telemetry@workspace:lib/telemetry":
   version: 0.0.0-use.local
   resolution: "@storybook/telemetry@workspace:lib/telemetry"
   dependencies:
